@@ -47,9 +47,9 @@ Agents shouldn’t just answer questions – they should coordinate, contract, a
 This project explores what becomes possible when you give AI agents:
 - a shared orchestration grid,
 - verified, governed tool access via MCP,
-- multi-provider cognitive capabilities (Claude, OpenAI, Gemini),
-- Claude-powered tool execution,
-- and a real, append-only system of record.
+- multi-provider cognitive capabilities (Claude, OpenAI, Gemini, Cursor),
+- a powerful DLT for economic assets and smart contracts (Convex),
+- and a real, append-only system of record
 
 For the MCP 1st Birthday Hackathon (Track 1), we built a prototype where agents
 negotiate, draft, validate, and execute economic contracts — end-to-end — across Anthropic, OpenAI, Manus, and the Covia Grid.
@@ -78,7 +78,7 @@ Agents:
 
 This is a proof-of-concept for multi-agent, multi-LLM economic coordination.
 
-## Problem Statement: Why We Built This
+### Problem Statement: Why We Built This
 
 Today’s agent frameworks break when you attempt real multi-agent coordination:
 * no shared memory
@@ -98,7 +98,7 @@ If agents are ever going to participate in commerce, operations, logistics, paym
 This project demonstrates the earliest version of that future:
 agents as economic actors, not isolated chatbots.
 
-## What’s Unique About Our Approach
+### What’s Unique About Our Approach
 
 Most agent demos rely on:
 * prompt wrappers
@@ -119,14 +119,13 @@ Our approach is different:
 This combination enables negotiation, validation, execution, and reconciliation across agents — something no existing framework provides.
 
 
-
-## How We Used MCP (Track 1 Requirements)
+### How We Used MCP (Track 1 Requirements)
 
 This submission is built specifically for Track 1: Build with MCP.
 
 We use MCP in three ways:
 
-### A. MCP as the universal transport layer
+#### A. MCP as the universal transport layer
 
 MCP lets Claude, OpenAI, Gemini, and Manus communicate through:
 - a shared message schema
@@ -137,7 +136,7 @@ MCP lets Claude, OpenAI, Gemini, and Manus communicate through:
 This removes 90% of typical agent-framework brittleness.
 
 
-### B. MCP + Claude for safe tool execution
+#### B. MCP + Claude for safe tool execution
 
 Claude is our MCP server providing:
 - contract validation tools
@@ -148,7 +147,7 @@ Claude is our MCP server providing:
 All tool calls go through MCP → Claude/Cursor → Covia for recording.
 
 
-### C. MCP as the foundation of agent-to-agent coordination
+#### C. MCP as the foundation of agent-to-agent coordination
 
 Agents provide tool outputs to each other via MCP-triggered events, including:
 - contract drafts
@@ -158,6 +157,8 @@ Agents provide tool outputs to each other via MCP-triggered events, including:
 
 MCP ensures ensure all in interactions have a consistent, verifiable structure and are usable for a wide range of agentic tools.
 
+
+## How to Run the Project Locally
 
 ## Demo
 
@@ -169,19 +170,6 @@ Covia Team HuggingFace demo link here:
 - link to YouTube demo
 - link to HuggingFace space
 
-## Social Post (Public Announcement)
-
-As part of our submission, we shared a social post explaining the concept and inspiration behind our Track 1 project.
-
-**Public Post:**  
-<INSERT_LINKEDIN_OR_TWITTER_POST_URL_HERE>
-
-This post introduces the idea of agents negotiating and executing economic contracts using MCP + Claude + Cursor + Covia Grid, and provides context for our submission.
-
-## How to Run the Project Locally
-
-
-
 ## Components Included in This Submission
 
 This repo includes:
@@ -191,6 +179,16 @@ This repo includes:
 The demo has dependencies on:
 - [Convex](https://convex.world) - Convex testnet code, used to run a separate Space for the shared global DLT layer at https://huggingface.co/spaces/mikera1337/convex-testnet
 - [Covia Venue](https://github.com/covia-ai/covia) - Grid venue code used for the grid server
+
+## Social Post (Public Announcement)
+
+As part of our submission, we shared a social post explaining the concept and inspiration behind our Track 1 project.
+
+**Public Post:**  
+<INSERT_LINKEDIN_OR_TWITTER_POST_URL_HERE>
+
+This post introduces the idea of agents negotiating and executing economic contracts using MCP + Claude + Cursor + Covia Grid, and provides context for our submission.
+
 
 ## Acknowledgements
 
