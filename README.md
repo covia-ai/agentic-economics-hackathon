@@ -37,6 +37,13 @@ For the **MCP 1st Birthday Hackathon – Track 1**, we use the **Covia Federated
 - draft and validate economic contracts,
 - and execute them end-to-end across tools and providers.
 
+## Demo
+
+Covia Team Hugging Face demo link here:
+
+- link to YouTube demo - https://youtu.be/7KkT8efTv1s
+- link to HuggingFace space - https://huggingface.co/spaces/MCP-1st-Birthday/agentic-economics
+- Social Media post - https://x.com/mikera/status/1995277731609653316
 
 ## Agentic Economic Contracting with Covia.ai (MCP Hackathon – Track 1)
 
@@ -54,16 +61,6 @@ negotiate, draft, validate, and execute economic contracts — end-to-end — ac
 
 This is our first glimpse of agentic economics: agents acting as economic participants, not chatbots.
 
-
-## Demo
-
-Covia Team Hugging Face demo link here:
-
-➡ Demo:
-<INSERT LINK HERE>
-
-- link to YouTube demo
-- link to HuggingFace space
 
 ## Project Overview
 
@@ -205,7 +202,7 @@ The demo has dependencies on:
 As part of our submission, we shared a social post explaining the concept and inspiration behind our Track 1 project.
 
 **Public Post:**  
-<INSERT_LINKEDIN_OR_TWITTER_POST_URL_HERE>
+[Post by Mike](https://x.com/mikera/status/1995277731609653316)
 
 This post introduces the idea of agents negotiating and executing economic contracts using MCP + Claude + Cursor + Covia Grid, and provides context for our submission.
 
