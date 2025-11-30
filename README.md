@@ -200,7 +200,7 @@ Thanks to:
 - Anthropic, OpenAI, and Google for their APIs
 - The MCP community for building a shared foundation
 
-##License
+## License
 
 Apache 2.0 License.
 See LICENSE file in the repo.
