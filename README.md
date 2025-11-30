@@ -33,7 +33,7 @@ For the **MCP 1st Birthday Hackathon – Track 1**, we use the **Covia Federated
 Our goal is simple: show a glimpse of what **agentic economics** looks like when you move beyond glue code and brittle workflows, and treat agents as **economic actors** operating on top of a shared grid.
 
 
-Agentic Economic Contracting with Covia.ai (MCP Hackathon – Track 1)
+## Agentic Economic Contracting with Covia.ai (MCP Hackathon – Track 1)
 
 Agents shouldn’t just answer questions – they should coordinate, contract, and transact.
 
@@ -51,7 +51,7 @@ This is our first glimpse of agentic economics: agents acting as economic partic
 
 ⸻
 
-Project Overview
+## Project Overview
 
 This project demonstrates an agentic economic coordination system built using:
 	•	MCP (Model Context Protocol) for unified tool/model interoperability
@@ -75,13 +75,13 @@ This is a proof-of-concept for multi-agent, multi-LLM economic coordination.
 
 ⸻
 
-How We Used MCP (Track 1 Requirements)
+## How We Used MCP (Track 1 Requirements)
 
 This submission is built specifically for Track 1: Build with MCP.
 
 We use MCP in three ways:
 
-A. MCP as the universal transport layer
+### A. MCP as the universal transport layer
 
 MCP lets Claude, OpenAI, Gemini, and Manus communicate through:
 	•	a shared message schema
@@ -93,7 +93,7 @@ This removes 90% of typical agent-framework brittleness.
 
 ⸻
 
-B. MCP + Claude for safe tool execution
+### B. MCP + Claude for safe tool execution
 
 Claude is our MCP server providing:
 	•	contract validation tools
@@ -105,7 +105,7 @@ All tool calls go through MCP → Claude/Cursor → Covia for recording.
 
 ⸻
 
-C. MCP as the foundation of agent-to-agent coordination
+### C. MCP as the foundation of agent-to-agent coordination
 
 Agents provide tool outputs to each other via MCP events, including:
 	•	contract drafts
@@ -116,7 +116,7 @@ Agents provide tool outputs to each other via MCP events, including:
 MCP ensures everything has a consistent, verifiable structure.
 
 
-Demo
+## Demo
 
 Covia Team HuggingFace demo link here:
 
@@ -126,11 +126,11 @@ Covia Team HuggingFace demo link here:
 	•	link to YouTube demo
 	•	link to HuggingFace space
 
-  How to Run the Project Locally
+## How to Run the Project Locally
 
 
 
-  Components Included in This Submission
+## Components Included in This Submission
 
 This repo includes:
 	•	/contracts/ → contract templates + schema
@@ -141,7 +141,7 @@ This repo includes:
 	•	/demo/ → executable demo script
 	•	/README.md → submission documentation (this file)
 
-Acknowledgements
+## Acknowledgements
 
 Thanks to:
 	•	HuggingFace and Partners for hosting the MCP hackathon
