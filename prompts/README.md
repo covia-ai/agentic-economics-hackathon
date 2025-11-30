@@ -42,5 +42,6 @@ The account is funded and ready to use on the Convex testnet.
 If you already have an account, you get get an agent to control it as follows:
 
 ```
-We are going to do some work on the convex testnet. Check that you can control of the account #134 by using the private seed 0xa3d9ea9b92ea72fb3225522412f1d928652aea466c1bc76d5320dc38f65bba18
+We are going to do some work on the convex testnet. Check that you 
+can control the account #134 by using the private seed 0xa3d9ea9b92ea72fb3225522412f1d928652aea466c1bc76d5320dc38f65bba18
 ```
