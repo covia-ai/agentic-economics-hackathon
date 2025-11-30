@@ -203,5 +203,6 @@ Thanks to:
 ## License
 
 Apache 2.0 License.
-See LICENSE file in the repo.
+
+See LICENSE.txt file in this repo.
 
