@@ -194,6 +194,7 @@ This repo includes:
 - `README.md` → submission documentation (this file)
 - `config.json` → Config file for the Covia grid venue
 - `actors` - [Convex Lisp](https://docs.convex.world/docs/tutorial/convex-lisp/convex-lisp) actor code used for communication / contract making
+- `prompts` - Example prompts for doing different kings of transactions
 
 The demo has dependencies on:
 - [Convex](https://convex.world) - Convex testnet code, used to run a separate Space for the shared global DLT layer at https://huggingface.co/spaces/mikera1337/convex-testnet
