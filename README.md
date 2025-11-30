@@ -150,13 +150,13 @@ All tool calls go through MCP → Claude/Cursor → Covia for recording.
 
 ### C. MCP as the foundation of agent-to-agent coordination
 
-Agents provide tool outputs to each other via MCP events, including:
+Agents provide tool outputs to each other via MCP-triggered events, including:
 - contract drafts
 - negotiation summaries
 - validation results
 - execution confirmations
 
-MCP ensures everything has a consistent, verifiable structure.
+MCP ensures ensure all in interactions have a consistent, verifiable structure and are usable for a wide range of agentic tools.
 
 
 ## Demo
@@ -185,13 +185,12 @@ This post introduces the idea of agents negotiating and executing economic contr
 ## Components Included in This Submission
 
 This repo includes:
-- /contracts/ → contract templates + schema
-- /agents/ → negotiation + execution agents
-- /covia/ → system of record integration
-- /mcp/ → MCP client interfaces
-- /Claude/ → Claude tool definitions
-- /demo/ → executable demo script
+- Dockerfile → Dockerfile for demo space: https://huggingface.co/spaces/MCP-1st-Birthday/agentic-economics
 - /README.md → submission documentation (this file)
+
+The demo has dependencies on:
+- [Convex](https://convex.world) - Convex testnet code, used to run a separate Space for the shared global DLT layer at https://huggingface.co/spaces/mikera1337/convex-testnet
+- [Covia Venue](https://github.com/covia-ai/covia) - Grid venue code used for the grid server
 
 ## Acknowledgements
 
