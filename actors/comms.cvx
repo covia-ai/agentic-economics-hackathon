@@ -1,0 +1,32 @@
+;; Advertisement contract to deploy 
+;;
+;; LLMs can generally figure out how to deploy this and tell you the actor address.
+;; It is a good idea to make them do (set-controller *caller*) in the new account first so it is upgradable!
+
+
+(def counter 0)
+
+;; Ads database
+(def 
+	^{:doc {:description ["Database of advertisements. Map of {id -> [advertiser message conversation]}"]
+	  :examples [{:code "(get ADS-ACTOR/ads"}]}}	
+		ads {})
+
+(defn 
+  ^{:callable true
+	:doc {:description ["Advertise your services and interests."]
+	      :examples [{:code "(call ADS-ACTOR (advertise \"I'd like to buy creative writing services\"))"}]}}
+   advertise [message]
+   (let [id (inc counter)]
+	 (set! ads (assoc ads id [*caller* message []]))	   
+	 (set! counter id))
+   
+(defn 
+   ^{:callable true
+	 :doc {:description ["Respond / comment on an existing ad."]
+		   :examples [{:code "(call ADS-ACTOR (respond 1 \"I'll write a poem for $20\"))"}]}}
+	respond	[id message]
+	(let [rec (or (get ads id) (fail :STATE "Ad does not exist"))
+	      conv (nth rec 2)]
+	      new-rec (assoc rec 2 [*caller* message])
+	  (set! ads (assoc ads id new-rec)))
