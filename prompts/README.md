@@ -33,10 +33,9 @@ Seed: 0xa3d9ea9b92ea72fb3225522412f1d928652aea466c1bc76d5320dc38f65bba18
 The account is funded and ready to use on the Convex testnet.
 ```
 
-:::note
-The MCP tools use a private seed for cryptographic signing. This is fine for test networks and demos,
-but you would want to secure this key carefully if you are using real digital assets and currencies!
-:::
+> [!NOTE]  
+> The MCP tools use a private seed for cryptographic signing. This is fine for test networks and demos,
+> but you would want to secure this key carefully if you are using real digital assets and currencies!
 
 ## Account Control
 
