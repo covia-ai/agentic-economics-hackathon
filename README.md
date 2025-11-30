@@ -73,6 +73,48 @@ Agents:
 
 This is a proof-of-concept for multi-agent, multi-LLM economic coordination.
 
+## Problem Statement: Why We Built This
+
+Today’s agent frameworks break when you attempt real multi-agent coordination:
+* no shared memory
+* no shared system of record
+* no contract/state model
+* no cross-LLM cooperation
+* brittle tool chains
+* hidden execution context
+
+If agents are ever going to participate in commerce, operations, logistics, payments, or negotiations, they need:
+- verifiable contracts
+- cross-provider cognition
+- tool-level governance
+- state synchronization
+- and append-only auditability
+
+This project demonstrates the earliest version of that future:
+agents as economic actors, not isolated chatbots.
+
+⸻
+
+## What’s Unique About Our Approach
+
+Most agent demos rely on:
+* prompt wrappers
+* LangGraph spaghetti
+* static workflows
+* single-LLM dependence
+* hidden state
+
+Our approach is different:
+
+- Multi-provider cognition (Claude + Cursor + Gemini (optional))
+- Manus for structured tool governance
+- MCP as the unifying protocol
+- Covia Grid as a shared execution + memory layer
+- Full end-to-end system of record
+- Economic contract objects (not JSON hacks)
+
+This combination enables negotiation, validation, execution, and reconciliation across agents — something no existing framework provides.
+
 ⸻
 
 ## How We Used MCP (Track 1 Requirements)
@@ -126,6 +168,15 @@ Covia Team HuggingFace demo link here:
 - link to YouTube demo
 - link to HuggingFace space
 
+## Social Post (Public Announcement)
+
+As part of our submission, we shared a social post explaining the concept and inspiration behind our Track 1 project.
+
+**Public Post:**  
+<INSERT_LINKEDIN_OR_TWITTER_POST_URL_HERE>
+
+This post introduces the idea of agents negotiating and executing economic contracts using MCP + Claude + Cursor + Covia Grid, and provides context for our submission.
+
 ## How to Run the Project Locally
 
 
@@ -148,3 +199,8 @@ Thanks to:
 - The Anthropic team for providing the MCP server
 - Anthropic, OpenAI, and Google for their APIs
 - The MCP community for building a shared foundation
+
+##License
+
+Apache 2.0 License.
+See LICENSE file in the repo.
