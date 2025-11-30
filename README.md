@@ -16,3 +16,5 @@ An entry by the [Covia](https://covia.ai) team for the Hugging Face 1st Birthday
 - [Mike](https://huggingface.co/mikera1337) - mikera1337
 - [Chirdeep](https://huggingface.co/CSC02) - CSC02
 
+Also available on GitHub: https://github.com/covia-ai/agentic-economics-hackathon
+
