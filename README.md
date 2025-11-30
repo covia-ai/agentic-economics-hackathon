@@ -1,5 +1,5 @@
 ---
-title: Agentic Economics
+title: Agentic Economies with Covia
 emoji: 📚
 colorFrom: indigo
 colorTo: blue
@@ -20,24 +20,22 @@ Team:
 
 Also available on GitHub: https://github.com/covia-ai/agentic-economics-hackathon
 
-Tags: 
-- building-mcp-track-01
-- building-mcp-track-Covia-agentic-economics
+## Vision
 
 > **Agents shouldn’t just answer questions – they should coordinate, contract, and transact.**
+
+Our goal is simple: show a glimpse of what **agentic economies** looks like when you move beyond glue code and brittle workflows, and treat agents as **economic actors** operating on top of a shared grid.
 
 This project is our exploration of what happens when you give AI agents:
 - a shared orchestration grid,
 - a real system of record,
 - and the ability to form and execute **economic contracts**.
 
-For the **MCP 1st Birthday Hackathon – Track 1**, we use the **Covia Federated Orchestration Grid** together with **MCP**, **Anthropic Claude**, **Cursor**, and (optionally) **Gemini** to let agents:
+For the **MCP 1st Birthday Hackathon – Track 1**, we use the **Covia Federated Orchestration Grid** together with **MCP**, **Anthropic Claude** and **Cursor** to let agents:
 
 - negotiate terms,
 - draft and validate economic contracts,
 - and execute them end-to-end across tools and providers.
-
-Our goal is simple: show a glimpse of what **agentic economics** looks like when you move beyond glue code and brittle workflows, and treat agents as **economic actors** operating on top of a shared grid.
 
 
 ## Agentic Economic Contracting with Covia.ai (MCP Hackathon – Track 1)
@@ -55,6 +53,17 @@ For the MCP 1st Birthday Hackathon (Track 1), we built a prototype where agents
 negotiate, draft, validate, and execute economic contracts — end-to-end — across Anthropic, OpenAI, Manus, and the Covia Grid.
 
 This is our first glimpse of agentic economics: agents acting as economic participants, not chatbots.
+
+
+## Demo
+
+Covia Team Hugging Face demo link here:
+
+➡ Demo:
+<INSERT LINK HERE>
+
+- link to YouTube demo
+- link to HuggingFace space
 
 ## Project Overview
 
@@ -92,8 +101,8 @@ If agents are ever going to participate in commerce, operations, logistics, paym
 - verifiable contracts
 - cross-provider cognition
 - tool-level governance
-- state synchronization
-- and append-only auditability
+- state synchronisation
+- append-only auditability
 
 This project demonstrates the earliest version of that future:
 agents as economic actors, not isolated chatbots.
@@ -109,9 +118,8 @@ Most agent demos rely on:
 
 Our approach is different:
 
-- Multi-provider cognition (Claude + Cursor + Gemini (optional))
-- Manus for structured tool governance
-- MCP as the unifying protocol
+- Multi-provider cognition (Claude, ChatGPT, Cursor, Manus, Gemini etc.)
+- MCP as a flexible protocol for accessing economic systems
 - Covia Grid as a shared execution + memory layer
 - Full end-to-end system of record
 - Economic contract objects (not JSON hacks)
@@ -158,17 +166,26 @@ Agents provide tool outputs to each other via MCP-triggered events, including:
 MCP ensures ensure all in interactions have a consistent, verifiable structure and are usable for a wide range of agentic tools.
 
 
-## How to Run the Project Locally
+## Usage
 
-## Demo
+### Helpful tools and links
 
-Covia Team HuggingFace demo link here:
+The space running the MCP server is:
 
-➡ Demo:
-<INSERT LINK HERE>
+```
+https://mcp-1st-birthday-agentic-economics.hf.space
+```
 
-- link to YouTube demo
-- link to HuggingFace space
+You can explore the Covia Grid, look at job history etc. with the [Covia App](https://app.covia.ai) - connect to  the venue at `https://mcp-1st-birthday-agentic-economics.hf.space` to browse jobs, assets and operations.
+
+Access to the [Convex](https://convex.world) test network used in the demo is also available via a Hugging Face Space which provides an explorer interface, REST API endpoints and also has its own MCP tools:
+
+```
+https://mikera1337-convex-testnet.hf.space
+```
+
+
+
 
 ## Components Included in This Submission
 
