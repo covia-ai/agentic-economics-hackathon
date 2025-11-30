@@ -14,6 +14,10 @@ short_description: Agents that build, negotiate and execute real contracts
 
 An entry by the [Covia](https://covia.ai) team for the Hugging Face 1st Birthday hackathon.
 
+Tags: 
+- building-mcp-track-01
+- building-mcp-track-Covia-agentic-economics
+
 - [Mike](https://huggingface.co/mikera1337) - mikera1337
 - [Chirdeep](https://huggingface.co/CSC02) - CSC02
 
