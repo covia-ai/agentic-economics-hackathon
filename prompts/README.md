@@ -46,3 +46,53 @@ We are going to do some work on the convex testnet.
 Check that you can control the account #134 using the private seed:
 0xa3d9ea9b92ea72fb3225522412f1d928652aea466c1bc76d5320dc38f65bba18
 ```
+
+## Digital assets 
+
+Agents tend to be smart enough t to understand and work with digital assets directly on convex. 
+
+Prompts like the following should all work:
+
+```
+What is my balance of CVM?
+```
+
+```
+Send $50 of the token @currency.USDF to account #13
+```
+
+## Using Actors
+
+Agents can usually exaime and work oput how to use Actors purely from account metadata:
+
+```
+look at the account #136. What does it do?
+```
+
+Expect answers like:
+
+```
+Account #136 - ADS-ACTOR:
+This is an advertisement/marketplace actor with three main functions:
+
+advertise - Post ads for services/interests you want to buy or sell
+respond - Comment/respond to existing ads
+ads - Database storing all advertisements (currently empty)
+
+Each ad includes advertiser info, message, and conversation thread. It's basically a decentralized classifieds/marketplace system on Convex.
+```
+
+
+## Deploying actors
+
+You may want to deploy your own actors to implement smart contracts, advertisements, escrow systems etc.
+
+```
+Deploy this actor in a new account. Remember to add `(set-controller *caller*)` so that we can upgrade the actor later if required.
+
+<Pase Actor Code here>
+```
+
+See the `actors` directory for example actor code.
+
+Agents *can* usually write actors themselves to implement specific logic, but you may want to test and verify carefully (especially from a security perspective)
