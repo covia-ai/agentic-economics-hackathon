@@ -1,0 +1,29 @@
+{
+	/*
+	 * Config for Hugging FAce Hackathon Space
+	 */
+	"venues":[
+		// First venue
+		{
+			"name":"MCP 1st Birthday - Agentic Economics",
+			"did":"did:web:MCP-1st-Birthday-agentic-economics.hf.space",
+			"hostname":"MCP-1st-Birthday-agentic-economics.hf.space",
+			"port":7860,
+			
+			// Configure MCP server capabilities
+			"mcp":{
+				"enabled":true
+			},
+			
+			// Configure adapters
+			"adapters":{
+				
+			}
+		}
+	],
+	
+	// Whole-server configuration goes here
+	"convex": {
+		// Config for embedded Convex peer, shared between venue instances
+	}
+}
