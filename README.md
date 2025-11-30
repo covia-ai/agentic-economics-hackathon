@@ -190,8 +190,10 @@ https://mikera1337-convex-testnet.hf.space
 ## Components Included in This Submission
 
 This repo includes:
-- Dockerfile → Dockerfile for demo space: https://huggingface.co/spaces/MCP-1st-Birthday/agentic-economics
-- /README.md → submission documentation (this file)
+- `Dockerfile` → Dockerfile for demo space: https://huggingface.co/spaces/MCP-1st-Birthday/agentic-economics
+- `README.md` → submission documentation (this file)
+- `config.json` → Config file for the Covia grid venue
+- `actors` - [Convex Lisp](https://docs.convex.world/docs/tutorial/convex-lisp/convex-lisp) actor code used for communication / contract making
 
 The demo has dependencies on:
 - [Convex](https://convex.world) - Convex testnet code, used to run a separate Space for the shared global DLT layer at https://huggingface.co/spaces/mikera1337/convex-testnet
